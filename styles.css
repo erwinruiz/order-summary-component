@@ -7,7 +7,7 @@
 body {
   width: 375px;
   height: 100vh;
-  background-image: url("/images/pattern-background-mobile.svg");
+  background-image: url("./images/pattern-background-mobile.svg");
   background-size: cover;
   background-color: hsl(225, 100%, 94%);
   display: flex;
@@ -104,4 +104,18 @@ p {
 }
 .cancel-btn:hover {
   color: hsl(223, 47%, 23%);
+}
+
+
+@media (min-width: 376px){
+  body {
+    width: 100vw;
+    background-image: url("/images/pattern-background-desktop.svg");
+  }
+  section {
+    width: 375px;
+  }
+  .change-plane-btn {
+    margin-left: 50px;
+  }
 }
